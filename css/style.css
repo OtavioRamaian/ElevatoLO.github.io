@@ -90,7 +90,7 @@ body {
     padding: 10px;
 }
 
-/* Cards de Produtos */
+/* Cards de Produtos e Serviços */
 .product-card {
     border-radius: 15px;
     transition: all 0.4s ease;
@@ -152,4 +152,36 @@ body {
 .reveal-left.active, .reveal-right.active, .reveal-up.active {
     opacity: 1;
     transform: translate(0);
+}
+
+/* --- NOVAS REGRAS: MENU LATERAL, CARDS HOME E MODAIS --- */
+
+/* Botão Hambúrguer Customizado */
+.btn-menu-custom {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+.btn-menu-custom:hover i {
+    color: var(--color-orange) !important;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* Cards da Página Inicial (Serviços) */
+.service-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+.service-card:hover {
+    background-color: var(--color-blue);
+    transform: translateY(-5px);
+}
+.service-card:hover h5, .service-card:hover i {
+    color: white !important;
+}
+
+/* Cursor Pointer para itens clicáveis */
+.cursor-pointer {
+    cursor: pointer !important;
 }
