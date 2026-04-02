@@ -1,0 +1,155 @@
+/* Variáveis de Cores Baseadas na Logo */
+:root {
+    --color-blue: #004d85; /* Azul da Logo */
+    --color-orange: #f37021; /* Laranja da Logo */
+    --color-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Utilitários de Texto e Cor */
+.text-blue { color: var(--color-blue) !important; }
+.text-orange { color: var(--color-orange) !important; }
+.bg-blue { background-color: var(--color-blue) !important; }
+.bg-orange { background-color: var(--color-orange) !important; }
+
+/* Navbar Customizada */
+.custom-navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--color-orange);
+    transition: all 0.3s ease;
+}
+
+.logo-img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar-center-text h1 {
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    letter-spacing: 2px;
+}
+
+.btn-outline-orange {
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+    transition: 0.3s;
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--color-orange);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(243, 112, 33, 0.3);
+}
+
+.btn-primary-custom {
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--color-orange);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Espaçamento para o cabeçalho fixo */
+.mt-custom {
+    margin-top: 120px;
+}
+
+/* Lista de Vantagens */
+.feature-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Carrossel Customizado */
+.carrossel-img {
+    height: 450px;
+    object-fit: cover; /* Faz as fotos quadradas preencherem bem o espaço */
+    transition: transform 0.5s ease;
+}
+
+/* Efeito de Zoom leve na imagem do carrossel */
+.carousel-item.active .carrossel-img {
+    transform: scale(1.03); 
+}
+
+.bg-dark-overlay {
+    background-color: rgba(0, 77, 133, 0.8) !important; /* Azul com transparência */
+    padding: 10px;
+}
+
+/* Cards de Produtos */
+.product-card {
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-bottom: 4px solid var(--color-orange) !important;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .icon-box {
+    transform: rotateY(180deg); /* Efeito 3D divertido no ícone ao passar o mouse */
+}
+
+/* Botão Flutuante WhatsApp */
+.float-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.float-whatsapp:hover {
+    background-color: #1ebe57;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+/* Classes para Animação JavaScript (Scroll Reveal) */
+.reveal-left, .reveal-right, .reveal-up {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.reveal-left { transform: translateX(-50px); }
+.reveal-right { transform: translateX(50px); }
+.reveal-up { transform: translateY(50px); }
+
+.reveal-left.active, .reveal-right.active, .reveal-up.active {
+    opacity: 1;
+    transform: translate(0);
+}
