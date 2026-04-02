@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELEVATO L&O | Locação de Tendas e Estruturas</title>
+    <title>ELEVATO L&O | Início</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -13,14 +13,20 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar shadow-sm">
+    <nav class="navbar navbar-expand fixed-top custom-navbar shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo Elevato" class="logo-img">
-            </a>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-menu-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+                    <i class="fas fa-bars fs-3 text-blue"></i>
+                </button>
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="img/logo.png" alt="Logo Elevato" class="logo-img">
+                </a>
+            </div>
             
             <div class="navbar-center-text d-none d-md-block">
-                <h1 class="m-0 text-uppercase fw-bold">ELEVATO L&O</h1>
+                <h1 class="m-0 text-uppercase fw-bold text-blue">INÍCIO</h1>
             </div>
 
             <div class="navbar-right">
@@ -31,124 +37,106 @@
         </div>
     </nav>
 
-    <section class="hero-section container mt-custom">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
-                <h2 class="fw-bold text-blue mb-3">Transformando Eventos em Experiências Inesquecíveis</h2>
-                <p class="text-muted lead">Bem-vindo à <strong>ELEVATO - L&O</strong>, a sua parceira ideal na realização de eventos extraordinários.</p>
-                <p>Somos especialistas em locação de itens e estruturas para festas e eventos de todos os portes. Nosso compromisso vai além da simples locação; buscamos ser co-criadores de momentos especiais, elevando cada detalhe ao mais alto padrão de excelência.</p>
-                <ul class="list-unstyled mt-4 feature-list">
-                    <li><i class="fas fa-check-circle text-orange"></i> Excelência e Qualidade Garantida</li>
-                    <li><i class="fas fa-check-circle text-orange"></i> Variedade e Versatilidade de Estruturas</li>
-                    <li><i class="fas fa-check-circle text-orange"></i> Logística Eficiente e Pontual</li>
-                </ul>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold text-blue" id="menuLateralLabel">Nossos Serviços</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group list-group-flush">
+                <a href="index.html" class="list-group-item list-group-item-action fw-bold text-orange"><i class="fas fa-home me-2"></i> Início</a>
+                <a href="tendas.html" class="list-group-item list-group-item-action"><i class="fas fa-campground me-2"></i> Tendas e Coberturas</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-chair me-2"></i> Mesas e Cadeiras</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-glass-cheers me-2"></i> Artigos para Festas</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-lightbulb me-2"></i> Equipamentos</a>
             </div>
+        </div>
+    </div>
 
-            <div class="col-lg-6 reveal-right">
-                <div id="tendasCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#tendasCarousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#tendasCarousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#tendasCarousel" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#tendasCarousel" data-bs-slide-to="3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="img/Evento1.jpeg" class="d-block w-100 carrossel-img" alt="evento1">
-                            <div class="carousel-caption d-none d-md-block bg-dark-overlay rounded">
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="img/evento2.jpeg" class="d-block w-100 carrossel-img" alt="evento2">
-                            <div class="carousel-caption d-none d-md-block bg-dark-overlay rounded">
-
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="img/evento3.jpeg" class="d-block w-100 carrossel-img" alt="evento3">
-                            <div class="carousel-caption d-none d-md-block bg-dark-overlay rounded">
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="img/evento4.jpeg" class="d-block w-100 carrossel-img" alt="evento4">
-                            <div class="carousel-caption d-none d-md-block bg-dark-overlay rounded">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#tendasCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#tendasCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
-                </div>
+    <section class="container mt-custom reveal-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="fw-bold text-blue mb-4">Transformando Eventos em Experiências Inesquecíveis</h2>
+                <p class="lead text-muted mb-4">Bem-vindo à <strong>ELEVATO - L&O</strong>. Nossa missão vai além da simples locação: somos co-criadores de momentos especiais, dedicados a transformar a sua visão em realidade com máxima elegância e profissionalismo.</p>
+                <p>Com vasta experiência no mercado, oferecemos soluções completas para eventos de todos os portes. Trabalhamos exclusivamente com materiais de alto padrão de qualidade e conservação. Nossa equipe consultiva e de logística eficiente garante agilidade, pontualidade e excelência em cada detalhe, desde o planejamento até a desmontagem.</p>
+                <p class="fw-bold text-orange fs-5 mt-4">ELEVATO L&O: Onde os detalhes fazem a diferença.</p>
             </div>
         </div>
     </section>
 
-    <section class="products-section bg-light py-5 mt-5">
+    <section class="bg-light py-5 mt-5">
         <div class="container reveal-up">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-blue">Nossas Estruturas</h2>
-                <p class="text-muted">Opções adequadas para cada tipo de necessidade e espaço. Escolha o formato ideal (Cobertura, Fechamento Lateral ou Balcão).</p>
+                <h2 class="fw-bold text-blue">Nossos Serviços</h2>
+                <p class="text-muted">Um catálogo completo e diversificado para a sua necessidade.</p>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 bg-orange text-white rounded-circle d-inline-flex align-items-center justify-content-center">
-                                <i class="fas fa-compress-arrows-alt fs-4"></i>
-                            </div>
-                            <h4 class="fw-bold text-blue">Tenda 2x2m</h4>
-                            <p class="card-text text-muted small">Compacta e versátil. Ideal para pequenos stands, pontos de apoio rápido, bilheterias ou recepções intimistas.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <a href="tendas.html" class="text-decoration-none">
+                        <div class="card service-card border-0 shadow-sm text-center py-4 h-100">
+                            <i class="fas fa-campground fs-1 text-orange mb-3"></i>
+                            <h5 class="fw-bold text-blue m-0">Tendas</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 bg-blue text-white rounded-circle d-inline-flex align-items-center justify-content-center">
-                                <i class="fas fa-expand-arrows-alt fs-4"></i>
-                            </div>
-                            <h4 class="fw-bold text-blue">Tenda 3x3m</h4>
-                            <p class="card-text text-muted small">O tamanho padrão perfeito. Excelente para feiras gastronômicas, exposições e cobertura para festas familiares ao ar livre.</p>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card service-card border-0 shadow-sm text-center py-4 h-100">
+                            <i class="fas fa-utensils fs-1 text-orange mb-3"></i>
+                            <h5 class="fw-bold text-blue m-0">Mesas</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 bg-orange text-white rounded-circle d-inline-flex align-items-center justify-content-center">
-                                <i class="fas fa-vector-square fs-4"></i>
-                            </div>
-                            <h4 class="fw-bold text-blue">Tenda 4.5x3m</h4>
-                            <p class="card-text text-muted small">Amplo espaço retangular. Ótima para áreas de alimentação, expositores maiores ou cerimônias de médio porte.</p>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card service-card border-0 shadow-sm text-center py-4 h-100">
+                            <i class="fas fa-chair fs-1 text-orange mb-3"></i>
+                            <h5 class="fw-bold text-blue m-0">Cadeiras</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 bg-blue text-white rounded-circle d-inline-flex align-items-center justify-content-center">
-                                <i class="fas fa-warehouse fs-4"></i>
-                            </div>
-                            <h4 class="fw-bold text-blue">Tenda 6.5x3m</h4>
-                            <p class="card-text text-muted small">Máxima cobertura. A solução robusta e imponente para grandes eventos corporativos e acomodação de grandes públicos.</p>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card service-card border-0 shadow-sm text-center py-4 h-100">
+                            <i class="fas fa-glass-martini-alt fs-1 text-orange mb-3"></i>
+                            <h5 class="fw-bold text-blue m-0">Artigos p/ Festas</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <a href="https://wa.me/5511978085738" class="btn btn-primary-custom btn-lg shadow text-uppercase fw-bold">
                     Consulte Disponibilidade <i class="fas fa-arrow-right ms-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5 reveal-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-blue">Avaliações</h2>
+            <p class="text-muted">O que dizem os clientes que elevaram o nível de seus eventos.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <div class="d-flex text-warning mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="fst-italic text-muted">"Equipe extremamente profissional! As tendas estavam impecáveis e a montagem foi super rápida. Fizeram do nosso casamento um dia perfeito, sem preocupações com o tempo."</p>
+                    <h6 class="fw-bold text-blue mt-auto m-0">- Carlos Eduardo S.</h6>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <div class="d-flex text-warning mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="fst-italic text-muted">"Alugamos as mesas e a estrutura para o evento de fim de ano da empresa. Atendimento nota 10 do início ao fim. O material é realmente de alto nível."</p>
+                    <h6 class="fw-bold text-blue mt-auto m-0">- Mariana Fernandes</h6>
+                </div>
             </div>
         </div>
     </section>
