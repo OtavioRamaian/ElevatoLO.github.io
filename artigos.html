@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVATO L&O | Artigos para Festas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand fixed-top custom-navbar shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-menu-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                    <i class="fas fa-bars fs-3 text-blue"></i>
+                </button>
+                <a class="navbar-brand m-0" href="index.html"><img src="img/logo.png" alt="Logo Elevato" class="logo-img"></a>
+            </div>
+            <div class="navbar-center-text d-none d-md-block"><h1 class="m-0 text-uppercase fw-bold text-blue">ARTIGOS P/ FESTAS</h1></div>
+            <div class="navbar-right">
+                <a href="https://wa.me/5511978085738" target="_blank" class="btn btn-outline-orange rounded-pill fw-bold"><i class="fab fa-whatsapp fs-5 me-2"></i> Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold text-blue">Nossos Serviços</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group list-group-flush">
+                <a href="index.html" class="list-group-item list-group-item-action"><i class="fas fa-home me-2"></i> Início</a>
+                <a href="tendas.html" class="list-group-item list-group-item-action"><i class="fas fa-campground me-2"></i> Tendas e Coberturas</a>
+                <a href="mesas.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-table me-2"></i> Mesas</a>
+                <a href="cadeiras.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-chair me-2"></i> Cadeiras</a>
+                <a href="artigos.html" class="list-group-item list-group-item-action fw-bold text-orange"><i class="fa-solid fa-martini-glass me-2"></i> Artigos para Festas</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section container mt-custom">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+                <h2 class="fw-bold text-blue mb-3">Louças, Talheres e Acessórios</h2>
+                <p class="text-muted lead">Tudo o que é necessário para uma apresentação impecável da sua gastronomia.</p>
+                <p>Oferecemos linhas completas de jantar e serviço para encantar os olhos e o paladar de seus convidados. Do rechaud do buffet à taça do brinde, nós temos tudo.</p>
+                <ul class="list-unstyled mt-4 feature-list">
+                    <li><i class="fas fa-check-circle text-orange"></i> Kits completos de Jantar e Sobremesa</li>
+                    <li><i class="fas fa-check-circle text-orange"></i> Taças e copos em cristal ou vidro</li>
+                    <li><i class="fas fa-check-circle text-orange"></i> Rechauds, Travessas e Suportes</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 reveal-right">
+                <div id="artigosCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000"><img src="img/Evento1.jpeg" class="d-block w-100 carrossel-img" alt="Louças"></div>
+                        <div class="carousel-item" data-bs-interval="3000"><img src="img/evento2.jpeg" class="d-block w-100 carrossel-img" alt="Talheres"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#artigosCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#artigosCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section bg-light py-5 mt-5">
+        <div class="container reveal-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-blue">Nossos Artigos</h2>
+                <p class="text-muted">Clique na categoria desejada para ver detalhes.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#produtoModal" data-title="Kit de Talheres Inox" data-desc="Faqueiros completos de alta durabilidade e brilho. Inclui garfos, facas, colheres e peças de sobremesa." data-img1="img/logo.png" data-img2="img/logo.png" data-img3="img/logo.png">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 bg-orange text-white rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-utensils fs-4"></i></div>
+                            <h4 class="fw-bold text-blue">Talheres</h4>
+                            <p class="card-text text-muted small mt-2">Clique para ver detalhes <i class="fas fa-plus-circle ms-1 text-orange"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#produtoModal" data-title="Taças e Copos" data-desc="Temos taças para água, vinho tinto, vinho branco, espumante e copos para drinks variados." data-img1="img/logo.png" data-img2="img/logo.png" data-img3="img/logo.png">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 bg-blue text-white rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-wine-glass-alt fs-4"></i></div>
+                            <h4 class="fw-bold text-blue">Taças</h4>
+                            <p class="card-text text-muted small mt-2">Clique para ver detalhes <i class="fas fa-plus-circle ms-1 text-orange"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#produtoModal" data-title="Pratos e Louças" data-desc="Pratos rasos, fundos e de sobremesa em porcelana branca clássica e elegante." data-img1="img/logo.png" data-img2="img/logo.png" data-img3="img/logo.png">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 bg-orange text-white rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-concierge-bell fs-4"></i></div>
+                            <h4 class="fw-bold text-blue">Pratos</h4>
+                            <p class="card-text text-muted small mt-2">Clique para ver detalhes <i class="fas fa-plus-circle ms-1 text-orange"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#produtoModal" data-title="Rechauds e Bandejas" data-desc="Acessórios fundamentais para manter a comida quente e exposta de maneira atrativa no buffet." data-img1="img/logo.png" data-img2="img/logo.png" data-img3="img/logo.png">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 bg-blue text-white rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-fire fs-4"></i></div>
+                            <h4 class="fw-bold text-blue">Rechauds</h4>
+                            <p class="card-text text-muted small mt-2">Clique para ver detalhes <i class="fas fa-plus-circle ms-1 text-orange"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="produtoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-blue text-white">
+                    <h5 class="modal-title fw-bold" id="modalTitle">Nome do Produto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p id="modalDesc" class="lead text-muted mb-4"></p>
+                    <h6 class="fw-bold text-orange mb-3">Modelos:</h6>
+                    <div class="row g-3">
+                        <div class="col-4 text-center"><img src="" id="modalImg1" class="img-fluid rounded shadow-sm border mb-2"><small class="fw-bold">Item 1</small></div>
+                        <div class="col-4 text-center"><img src="" id="modalImg2" class="img-fluid rounded shadow-sm border mb-2"><small class="fw-bold">Item 2</small></div>
+                        <div class="col-4 text-center"><img src="" id="modalImg3" class="img-fluid rounded shadow-sm border mb-2"><small class="fw-bold">Item 3</small></div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success fw-bold"><i class="fab fa-whatsapp me-2"></i> Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5511978085738" class="float-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <footer class="bg-dark text-light py-4 text-center"><div class="container"><p class="m-0">&copy; 2026 ELEVATO L&O.</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
