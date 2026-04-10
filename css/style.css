@@ -46,18 +46,15 @@ body {
 }
 
 .btn-primary-custom {
-    background-color: var(--color-blue);
+    background-color: #25D366;
+    border-color: #25D366;
     color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 50px;
-    transition: 0.3s;
 }
 
 .btn-primary-custom:hover {
-    background-color: var(--color-orange);
+    background-color: #128C7E;
+    border-color: #128C7E;
     color: white;
-    transform: scale(1.05);
 }
 
 /* Espaçamento para o cabeçalho fixo */
