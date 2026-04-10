@@ -185,3 +185,10 @@ body {
 .cursor-pointer {
     cursor: pointer !important;
 }
+
+/* Padronização do tamanho das imagens dentro dos Modais */
+.modal-img-custom {
+    width: 100%;
+    height: 180px; /* Você pode aumentar ou diminuir esse valor se quiser as fotos mais altas ou mais baixinhas */
+    object-fit: cover;
+}
