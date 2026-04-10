@@ -35,23 +35,27 @@ document.addEventListener("DOMContentLoaded", function () {
             var img1 = button.getAttribute('data-img1');
             var img2 = button.getAttribute('data-img2');
             var img3 = button.getAttribute('data-img3');
+            var label1 = button.getAttribute('data-label1'); // Puxa o texto da img 1
+            var label2 = button.getAttribute('data-label2'); // Puxa o texto da img 2
+            var label3 = button.getAttribute('data-label3'); // Puxa o texto da img 3
             
-            // Atualiza o conteúdo do modal
-            var modalTitle = produtoModal.querySelector('#modalTitle');
-            var modalDesc = produtoModal.querySelector('#modalDesc');
-            var modalImage1 = produtoModal.querySelector('#modalImg1');
-            var modalImage2 = produtoModal.querySelector('#modalImg2');
-            var modalImage3 = produtoModal.querySelector('#modalImg3');
+            // Atualiza os textos principais do modal
+            produtoModal.querySelector('#modalTitle').textContent = title;
+            produtoModal.querySelector('#modalDesc').textContent = desc;
             
-            modalTitle.textContent = title;
-            modalDesc.textContent = desc;
-            modalImage1.src = img1;
-            modalImage2.src = img2;
-            modalImage3.src = img3;
+            // Atualiza as Imagens e os Textos embaixo delas
+            produtoModal.querySelector('#modalImg1').src = img1;
+            produtoModal.querySelector('#modalLabel1').textContent = label1;
+            
+            produtoModal.querySelector('#modalImg2').src = img2;
+            produtoModal.querySelector('#modalLabel2').textContent = label2;
+            
+            produtoModal.querySelector('#modalImg3').src = img3;
+            produtoModal.querySelector('#modalLabel3').textContent = label3;
             
             // Altera o texto do botão do whatsApp para incluir o nome do produto específico
             var btnWhats = produtoModal.querySelector('.btn-success');
-            var msgPersonalizada = "Olá Elevato, gostaria de um orçamento para: " + title;
+            var msgPersonalizada = "Olá Elevato, gostaria de um orçamento para a estrutura: " + title;
             btnWhats.href = "https://wa.me/5511978085738?text=" + encodeURIComponent(msgPersonalizada);
         });
     }
