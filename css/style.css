@@ -35,16 +35,14 @@ body {
 }
 
 .btn-outline-orange {
-    color: var(--color-orange);
-    border: 2px solid var(--color-orange);
-    transition: 0.3s;
+    color: #25D366;
+    border-color: #25D366;
 }
 
 .btn-outline-orange:hover {
-    background-color: var(--color-orange);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(243, 112, 33, 0.3);
+    background-color: #25D366;
+    color: #fff;
+    border-color: #25D366;
 }
 
 .btn-primary-custom {
