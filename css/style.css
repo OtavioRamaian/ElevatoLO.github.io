@@ -172,7 +172,7 @@ body {
     background-color: var(--color-blue);
     transform: translateY(-5px);
 }
-.service-card:hover h5, .service-card:hover i {
+.service-card:hover * {
     color: white !important;
 }
 
