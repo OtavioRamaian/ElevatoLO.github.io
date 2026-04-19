@@ -187,3 +187,60 @@ body {
     height: 180px; /* Você pode aumentar ou diminuir esse valor se quiser as fotos mais altas ou mais baixinhas */
     object-fit: cover;
 }
+
+/* --- EFEITO LIGHTBOX (FOTO EM TELA CHEIA) --- */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999; /* Fica por cima de absolutamente tudo, inclusive do Modal */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Fundo preto transparente */
+    backdrop-filter: blur(8px); /* Desfoca o fundo */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Garante que a foto não corte na tela cheia */
+}
+
+#lightbox.active img {
+    transform: scale(1);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-lightbox:hover {
+    color: var(--color-orange);
+    transform: scale(1.1);
+}
+
+/* Deixa claro para o usuário que a foto do modal é clicável (vira uma lupinha) */
+.modal-img-custom {
+    cursor: zoom-in !important;
+}
